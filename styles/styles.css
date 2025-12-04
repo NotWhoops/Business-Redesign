@@ -23,6 +23,12 @@ body {
   padding: 0 !important;
 }
 
+/* Highlight active nav-link in red */
+.navbar-nav .nav-link.active {
+  font-weight: bold;
+  color: #e32020 !important;
+}
+
 /* Ensure inner content is vertically centered */
 .navbar .container-fluid {
   height: 100%;
@@ -40,6 +46,38 @@ body {
   margin-right: 50px;
   margin-top: 40px;
 }
+
+/* Buy-Sell Styling */
+.section {
+  display: flex;
+  flex-wrap: wrap; /* allows responsive wrapping */
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  gap: 20px; /* space between text and image */
+}
+
+.section-text, .section-img {
+  flex: 1 1 45%; /* each takes ~45% of the width */
+}
+
+.section-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* optional: rounded images */
+}
+
+/* Optional: Responsive behavior for mobile */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+  }
+
+  .section-text, .section-img {
+    flex: 1 1 100%;
+  }
+}
+
 
 /* Footer styling */
 footer {
