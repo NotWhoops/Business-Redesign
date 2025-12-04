@@ -1,8 +1,28 @@
-/* Make navbar height fixed at 93px */
+.bg-light-gray {
+  background-color: #d9d9d9;
+}
+
+.text-blue {
+  color: #050d62;
+}
+
+.text-red {
+  color: #e32020;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .navbar {
   height: 93px;
   min-height: 93px;
+  margin: 0 !important;
+  padding: 0 !important;
 }
+
 /* Ensure inner content is vertically centered */
 .navbar .container-fluid {
   height: 100%;
@@ -18,5 +38,43 @@
 .navbar-nav .nav-item {
   margin-left: 50px;
   margin-right: 50px;
-  margin-top: 50px;
+  margin-top: 40px;
+}
+
+/* Footer styling */
+footer {
+  margin-top: auto;        /* Pushes footer to bottom */
+  width: 100%;
+  height: 140px;
+}
+
+/* Footer container layout */
+.footer-container {
+  height: 140px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 0 40px;                
+  background-color: #d9d9d9;
+}
+
+/* LEFT column (stacked) */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* RIGHT column (stacked & right aligned) */
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+  text-align: right;
+}
+
+.footer-right img {
+  max-height: 55px;
+  margin-bottom: 5px;
 }
