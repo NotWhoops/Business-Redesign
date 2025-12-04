@@ -1,0 +1,17 @@
+/* Make navbar height fixed at 93px */
+.navbar {
+  height: 93px;
+  min-height: 93px;
+}
+/* Ensure inner content is vertically centered */
+.navbar .container-fluid {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: adjust logo height to fit nicely */
+.navbar-brand img {
+  height: 70px;
+  width: auto;
+}
