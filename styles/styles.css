@@ -48,40 +48,55 @@ body {
 }
 
 /* Buy-Sell Styling */
+.buy-sell-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Each row */
 .section {
   display: flex;
-  flex-wrap: wrap; /* allows responsive wrapping */
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
-  padding: 40px;
-  gap: 20px; /* space between text and image */
+  gap: 30px;
 }
 
-.section-text, .section-img {
-  flex: 1 1 45%; /* each takes ~45% of the width */
+/* Columns: text and image */
+.section-text,
+.section-img {
+  flex: 1 1 45%; /* each ~45% width */
 }
 
+/* Images responsive */
 .section-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px; /* optional: rounded images */
+  width: 800px;
+  height: 250px;
+  object-fit: 100%;
 }
 
-/* Optional: Responsive behavior for mobile */
+/* Responsive: stack on smaller screens */
 @media (max-width: 768px) {
   .section {
     flex-direction: column;
+    align-items: center;
   }
 
-  .section-text, .section-img {
+  .section-text,
+  .section-img {
     flex: 1 1 100%;
+  }
+  .section-img img {
+    width: 100%;
+    height: auto;
   }
 }
 
-
 /* Footer styling */
 footer {
-  margin-top: auto;        /* Pushes footer to bottom */
+  margin-top: auto; /* Pushes footer to bottom */
   width: 100%;
   height: 140px;
 }
@@ -91,9 +106,9 @@ footer {
   height: 140px;
   width: 100%;
   display: flex;
-  justify-content: space-between; 
-  align-items: center;            
-  padding: 0 40px;                
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
   background-color: #d9d9d9;
 }
 
@@ -108,7 +123,7 @@ footer {
 .footer-right {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; 
+  align-items: flex-end;
   text-align: right;
 }
 
@@ -121,6 +136,6 @@ footer {
   text-align: center;
 }
 
-.color{
+.color {
   color: darkblue;
 }
