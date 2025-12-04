@@ -14,6 +14,4 @@ Export Figma project into PDF
 In the comments: add public Figma link + list if team members
 */
 
-// You can add multiple dates with description.
-
-// Person who Peer Reviewed your assignment
+// Peer Review
