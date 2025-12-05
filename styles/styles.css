@@ -83,3 +83,27 @@ footer {
   text-align: center;
 }
 
+.bg-image{
+  background-image: url(../assets/homeimage.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.bg-image-content{
+  z-index: 2;
+  position: relative;
+}
+
+.bg-color-gray{
+  background-color: #D9D9D9;
+  height: 500px;
+  opacity: 60%;
+}
+
+.btnRed{
+  background-color:#E32020;
+  width: 100px;
+  height: 100px;
+}
