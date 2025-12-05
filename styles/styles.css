@@ -337,8 +337,8 @@ label {
 
 
 .contact-block {
-  flex: 1;
-  min-width: 0;
+  padding: 0;
+  margin: 0 auto;
 }
 
 
