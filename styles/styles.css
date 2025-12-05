@@ -152,3 +152,8 @@ footer {
 .navbar-nav .nav-link:hover {
   color: #E32020 !important;
 }
+
+.input-gray{
+  background-color: #d9d9d9;
+  border: 1px solid #aaa;
+}
