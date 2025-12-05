@@ -83,7 +83,6 @@ footer {
   text-align: center;
 }
 
-<<<<<<< HEAD
 .form-row {
     display: flex;
     justify-content: center;
@@ -107,7 +106,6 @@ footer {
     margin-bottom: 4px;
 }
 
-=======
 .bg-image{
   background-image: url(../assets/homeimage.webp);
   background-repeat: no-repeat;
@@ -132,4 +130,3 @@ footer {
   width: 100px;
   height: 100px;
 }
->>>>>>> b1d884247d15edf49b4642c7a5b70d806c6403a0
