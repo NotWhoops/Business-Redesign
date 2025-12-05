@@ -1,21 +1,10 @@
-.bg-light-gray {
-  background-color: #d9d9d9;
+/* Navbar & Footer Full Width */
+.navbar,
+footer {
+  width: 100%;
 }
 
-.text-blue {
-  color: #050d62;
-}
-
-.text-red {
-  color: #e32020;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-
+/* Navbar Styling */
 .navbar {
   height: 93px;
   min-height: 93px;
@@ -23,103 +12,78 @@ body {
   padding: 0 !important;
 }
 
-/* Highlight active nav-link in red */
 .navbar-nav .nav-link.active {
   font-weight: bold;
   color: #e32020 !important;
 }
 
-/* Ensure inner content is vertically centered */
 .navbar .container-fluid {
   height: 100%;
   display: flex;
   align-items: center;
 }
 
-/* Optional: adjust logo height to fit nicely */
 .navbar-brand img {
   height: 70px;
   width: auto;
 }
+
 .navbar-nav .nav-item {
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 40px;
 }
 
-/* Buy-Sell Styling */
-.buy-sell-wrapper {
+/* Body grid layout */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 30px;
+  justify-content: center;
+  padding: 20px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* Buying Section */
+.buying-section {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  gap: 10px;
 }
 
-/* Each row */
-.section {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 30px;
-}
-
-/* Columns: text and image */
-.section-text,
-.section-img {
-  flex: 1 1 45%; /* each ~45% width */
-}
-
-/* Images responsive */
-.section-img img {
-  width: 800px;
+.buying-section img {
+  width: 875px;
   height: 250px;
-  object-fit: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  margin-top: 40px;
 }
 
-/* Responsive: stack on smaller screens */
-@media (max-width: 768px) {
-  .section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .section-text,
-  .section-img {
-    flex: 1 1 100%;
-  }
-  .section-img img {
-    width: 100%;
-    height: auto;
-  }
+/* Selling Section */
+.selling-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-/* Footer styling */
-footer {
-  margin-top: auto; /* Pushes footer to bottom */
-  width: 100%;
-  height: 140px;
+.selling-section img {
+  width: 715px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 30px;
 }
 
-/* Footer container layout */
+/* Footer layout */
 .footer-container {
-  height: 140px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 40px;
-  background-color: #d9d9d9;
+  padding: 15px 50px;
 }
 
-/* LEFT column (stacked) */
-.footer-left {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-/* RIGHT column (stacked & right aligned) */
 .footer-right {
   display: flex;
   flex-direction: column;
@@ -132,10 +96,15 @@ footer {
   margin-bottom: 5px;
 }
 
-.text-center {
-  text-align: center;
+/* Text colors */
+.text-blue {
+  color: #050d62;
 }
 
-.color {
-  color: darkblue;
+.text-red {
+  color: #e32020;
+}
+
+.bg-light-gray {
+  background-color: #d9d9d9;
 }
