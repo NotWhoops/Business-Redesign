@@ -14,4 +14,6 @@ Export Figma project into PDF
 In the comments: add public Figma link + list if team members
 */
 
+//12/15/2025: made adjustments to all pages
+
 // Peer Review
