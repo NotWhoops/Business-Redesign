@@ -163,6 +163,11 @@ footer {
   height: 100px;
 }
 
+.text-for-virtual{
+  margin-right: 700px;
+  height: 100px;
+}
+
 .bg-color-gray-opacity {
   background-color: rgba(128, 128, 128, 0.2); 
   padding: 20px;      
