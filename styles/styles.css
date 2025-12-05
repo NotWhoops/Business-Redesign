@@ -23,6 +23,7 @@ body {
   padding: 0 !important;
 }
 
+
 /* Ensure inner content is vertically centered */
 .navbar .container-fluid {
   height: 100%;
@@ -142,4 +143,12 @@ footer {
 
 .BTn-margin{
   margin-left: 20px;
+}
+
+.navbar-nav .nav-link {
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #E32020 !important;
 }
