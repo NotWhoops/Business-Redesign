@@ -109,25 +109,31 @@ footer {
 
 .bg-image{
   background-image: url(../assets/homeimage.webp);
+  margin-top: 40px;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-size: 100% 100%;
   background-position: center;
-  height: 500px;
-}
-
-.bg-image-content{
-  z-index: 2;
-  position: relative;
+  height: 600px;
 }
 
 .bg-color-gray{
-  background-color: #D9D9D9;
-  height: 500px;
-  opacity: 60%;
+  background-color: rgb(217, 217, 217, 0.5);
+  height: 560px;
 }
 
-.btnRed{
+.btn-red{
   background-color:#E32020;
+  background-size: cover;
+  color: #050D62;
+  font-size: 22px;
+  width: 219px;
+  height: 93px;
+}
+
+.text-solid{
+  margin-top: 40px;
+  margin-left: 70px;
   width: 140px;
   height: 60px;
   
