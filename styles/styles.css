@@ -127,6 +127,19 @@ footer {
 
 .btnRed{
   background-color:#E32020;
-  width: 100px;
-  height: 100px;
+  width: 140px;
+  height: 60px;
+  
+}
+
+.text-color-white{
+  color: white;
+}
+
+.Btn-Radius{
+ border-radius: 25%;
+}
+
+.BTn-margin{
+  margin-left: 20px;
 }
