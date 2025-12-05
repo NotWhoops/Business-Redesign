@@ -232,7 +232,7 @@ footer {
 }
 
 .bg-image{
-  background-image: url(/assets/homeimage.webp);
+  background-image: url(../assets/homeimage.webp);
   margin-top: 40px;
   background-repeat: no-repeat;
   background-size: contain;
