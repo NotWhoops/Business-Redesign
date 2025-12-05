@@ -75,56 +75,116 @@ footer {
   object-fit: cover;
   margin-bottom: 30px;
 }
+.section-text {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+/* Large screens (1440px and below) */
+@media (max-width: 1440px) {
+  .main-grid {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  
+  .buying-section img {
+    width: 100%;
+    max-width: 800px;
+  }
+
+  .selling-section img {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+/* Medium screens (1024px and below) */
+@media (max-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+    row-gap: 25px;
+  }
+
+  .buying-section img,
+  .selling-section img {
+    width: 100%;
+    height: auto;
+  }
+
+  .navbar-nav .nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+  }
+}
 
 /* Responsive adjustments for screens 768px and below */
 @media (max-width: 768px) {
+
+  /* Stack the main grid vertically */
   .main-grid {
     grid-template-columns: 1fr;
-    width: 100%;
-
   }
 
+  /* Buying section */
   .buying-section {
-    flex-direction: column; 
-    align-items: stretch; 
-  }
-  .buying-section img {
-    order: 2; 
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
+    flex-direction: column;
+    align-items: stretch;
   }
   .buying-section .section-text {
-    order: 1; 
-    width: 100%; /
+    order: 1;
+    width: 100%;
+    word-wrap: break-word;
+  }
+  .buying-section img {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
   }
 
+  /* Selling section */
   .selling-section {
     flex-direction: column;
     align-items: stretch;
   }
-  .selling-section img {
-    order: 2; 
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-  }
   .selling-section .section-text {
     order: 1;
-    width: 100%; 
-  }
-    .buying-section img,
-  .selling-section img {
     width: 100%;
+    word-wrap: break-word;
+  }
+  .selling-section img {
+    order: 2;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     margin: 20px 0;
   }
-    .navbar-nav .nav-item {
+
+  /* Navbar adjustments */
+  .navbar-nav .nav-item {
     margin-left: 0;
     margin-right: 0;
     margin-top: 10px;
   }
+
+  /* Footer stacking */
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px;
+  }
+  .footer-right {
+    align-items: center;
+  }
 }
+
 
 /* Footer layout */
 .footer-container {
