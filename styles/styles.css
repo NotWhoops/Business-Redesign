@@ -453,3 +453,10 @@ label {
 .bg-light-gray {
   background-color: #d9d9d9;
 }
+
+@media (max-width: 1170px) {
+  .valerie-column{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
