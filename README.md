@@ -4,7 +4,9 @@
 
 // Business Redesign
 
-/* Isaiah Approved 12/4/25
+// Built a website from scratch with a figma template as a group project with Brandon, Jesus and Xavier  
+
+// Isaiah Approved 12/4/25
 
 // 12/15/2025: made adjustments to all pages
 
