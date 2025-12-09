@@ -648,7 +648,6 @@ footer {
   }
 }
 
-
 /* Footer layout */
 .footer-container {
   display: flex;
@@ -667,15 +666,6 @@ footer {
 .footer-right img {
   max-height: 55px;
   margin-bottom: 5px;
-}
-
-/* Text colors */
-.text-blue {
-  color: #050d62;
-}
-
-.text-red {
-  color: #e32020;
 }
 
 .bg-light-gray {
