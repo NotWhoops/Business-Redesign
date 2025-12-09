@@ -211,9 +211,6 @@ footer {
 .text-red{
   color: #E32020;
 }
-.bg-light-gray {
-  background-color: #d9d9d9;
-}
 
 .form-row {
     display: flex;
@@ -410,8 +407,8 @@ label {
 
 
 .contact-block {
-  padding: 0;
-  margin: 0 auto;
+  flex: 1;
+  min-width: 0;
 }
 
 
